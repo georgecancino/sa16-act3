@@ -1,0 +1,38 @@
+<h1>About Me</h1>
+
+<div>
+  <h2>Biography</h2>
+  <p>{{ bio }}</p>
+</div>
+
+<div>
+  <h2>Skills</h2>
+  <ul>
+    {% for skill in skills %}
+      <li>{{ skill }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div>
+  <h2>Education</h2>
+  <p>{{ education }}</p>
+</div>
+
+<div>
+  <h2>Achievements</h2>
+  <ul>
+    {% for achievement in achievements %}
+      <li>{{ achievement }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div>
+  <h2>Explore</h2>
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'work' %}">My Work</a></li>
+    <li><a href="{% url 'contact' %}">Contact Me</a></li>
+  </ul>
+</div>

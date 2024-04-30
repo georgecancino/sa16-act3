@@ -1,0 +1,13 @@
+<h1>My Portfolio</h1>
+
+<p>{{ welcome_message }}</p>
+<p>{{ summary }}</p>
+
+<div>
+  <h2>Explore</h2>
+  <ul>
+    <li><a href="{% url 'about' %}">About Me</a></li>
+    <li><a href="{% url 'work' %}">My Work</a></li>
+    <li><a href="{% url 'contact' %}">Contact Me</a></li>
+  </ul>
+</div>
